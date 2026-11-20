@@ -191,7 +191,7 @@
   <script>
     const phone = "5544999640402";
     const responses = {
-      sim: "SIM! Confirmamos nossa presença no casamento de vocês! Será uma alegria celebrar esse momento tão especial ao lado de vocês. 💚",
+      sim: "SIM! Confirmamos nossa presença no casamento de vocês! Será uma alegria celebrar esse momento tão especial ao lado dos noivos. 💚",
       certeza: "COM CERTEZA! Confirmamos nossa presença e já estamos contando os dias para celebrar esse momento com vocês! 🥂",
       nao: "Infelizmente, não poderemos comparecer ao casamento. Agradecemos muito pelo carinho do convite e desejamos toda a felicidade do mundo a vocês. 🤍"
     };
@@ -216,7 +216,7 @@
 
     send.addEventListener("click", () => {
       if (!selected) return;
-      const message = `Olá, João Victor e Ana Carolina! 💍\\n\\n${responses[selected]}`;
+      const message = `Olá, João Victor e Ana Carolina! 💍\n\n${responses[selected]}`;
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank", "noopener,noreferrer");
     });
